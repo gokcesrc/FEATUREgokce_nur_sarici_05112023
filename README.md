@@ -40,10 +40,10 @@ ROS stands for "Robot Operating System." Contrary to its name, ROS isn't strictl
 
 ### Why Linux?
 - ROS works better on Linux because it was initially designed and optimized specifically for this operating system. Additionally, the open-source nature and customizability of Linux allow users and developers to easily tailor and optimize ROS to their specific needs.
-0
+
 # WORKING PRINCIPLE OF ROS
 
-![ROS File System Level Diagram](URL-of-the-image)
+![Ros File Sysyem Level](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/1.PNG)
 
 - **Meta Packages:**
   - These are groupings of multiple packages. They are particularly used in larger projects or when bundling a series of packages together.
@@ -68,7 +68,8 @@ ROS stands for "Robot Operating System." Contrary to its name, ROS isn't strictl
 
 *This diagram illustrates how ROS is organized and how its fundamental components come together. Due to ROS's modular nature, if you wish to add or modify a certain functionality or feature, you can simply modify or add the relevant package or component to achieve that functionality.*
 
-FOTO
+![File System](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/2.PNG)
+
 - **CMakeLists.txt**:
   - Contains information on how the code should be compiled. It provides configuration and compilation directives using the CMake tool.
 
@@ -99,7 +100,8 @@ FOTO
 - **action**:
   - Contains definitions for actions.
  
-FOTO
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/3.PNG)
+
 
 - **Nodes**:
   - These are the individual processes that perform computations in ROS.
@@ -134,7 +136,7 @@ FOTO
   - Useful for saving data like sensor readings and then replaying it for testing and analysis.
   - The arrows in the diagram indicate the flow of communication and dependencies between these components. The overall architecture is designed to be flexible and distributed, allowing for modular robotics development and system design.
  
-    FOTO
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/4.PNG)
 
 - **ROSMASTER**:
   - Roscore is a central component of ROS (Robot Operating System).
@@ -146,9 +148,10 @@ FOTO
   - When roscore is started, ROS nodes can communicate with each other and use parameters stored in the parameter server.
 
 - **Publisher-Subscriber Model**
-  FOTO
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/5.png)
+
 - **Server-Client Model**
-- foto
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/6.PNG)
 
   ## CHECKPOINT II
 
@@ -202,7 +205,7 @@ $ source ~/catkin_ws/devel/setup.bash
 $ gedit ~/.bashrc
 ```
 - Afterward, you can add the path highlighted in yellow to your .bashrc file.
-  FOTO
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/7.PNG)
 
 # Navigating the Filesystem in ROS
 
@@ -245,9 +248,10 @@ $ cd catkin_ws/src
 $catkin_create_pkg composiv_tryouts
 ```
 
-FOTO1
-FOTO2
-FOTO3
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/8.PNG)
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/9.PNG)
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/10.PNG)
+
 
 ### After creating the package, don't forget to configure it with `catkin_make`.
 
@@ -264,7 +268,7 @@ $ catkin_make
 - Implementing a publisher and subscriber
 - Firstly let's create the script file.
 
-```bash
+```
 $ cd ~
 $ roscd composiv_tryuts
 $ mkdir scripts
@@ -276,11 +280,12 @@ $ cd scripts
 $ gedit composyt_talker.py
 ```
 
-foto1
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/11.PNG)
 ```
 $ gedit composiv_listener.py
 ```
-foto2
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/12.PNG)
+
 
 - To make the files we created executable, we need to change their permissions with chmod.
 
@@ -288,12 +293,14 @@ foto2
 $ chmod +x *
 $ rosrun composiv_tryouts composiv_talker.py
 ```
-foto
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/13.PNG)
+
 
 ```
 $ rosrun composiv_tryouts composiv_listener.py
 ```
-foto
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/14.PNG)
+
 
 ## CHECKPOINT VII
 
@@ -306,13 +313,14 @@ $ ls
 composiv_tryout.launch
 $ gedit composiv_tryout.launch
 ```
-foto
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/15.PNG)
+
 
 ```
 $ roscd composiv_tryouts/launch
 $ roslaunch composiv_tryouts composiv_tryout.launch
 ```
-FOTOSUNU KOY CODE CIKTISININ
+![](https://github.com/gokcesrc/feature-gokce_nur_sarici_05112023/blob/main/img/16.PNG)
 
 ## REFERENCES
 
